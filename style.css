@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css?family=Molle:400i');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+body {
+	min-width: 1200px;
+}
+header {
+
+	position: relative;
+}
+header .header-wraper {
+	position: relative;
+	width: 100%;
+	height: auto;
+	background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#000033));
+	background: -webkit-linear-gradient(#000000, #000033);
+	background: linear-gradient(#000000, #000033);
+	-webkit-filter: contrast(110%);	
+}
+header .header-wraper > img {
+	width: 100%;
+	height: auto;
+	opacity: 0.3;
+	-webkit-filter: contrast(120%);	
+}
+header .header-wraper .container-fluid {
+	position: absolute;
+	top: 0;
+	display: block;
+	padding: 15px;
+	width: 100%;
+} 
+header .header-wraper .container-fluid .search {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+header .header-wraper .container-fluid .glyphicon-search, .glyphicon-remove {
+	position: absolute;
+	right: 100px;
+	font-size: 22px;
+	color: white;
+	cursor: pointer;
+	padding-top: 7px;
+	-webkit-transition-duration: 0.6s;
+	        transition-duration: 0.6s;
+}
+header .header-wraper .container-fluid .glyphicon-search:hover, .glyphicon-remove:hover {
+	color: #ff981a;
+
+}
+header .header-wraper .container-fluid .search-form {
+	position: absolute;
+	right: 130px;
+	display: inline-block;
+	float: left;
+	width: 0;
+	opacity: 0;
+}
+header .header-wraper .container-fluid .search-form .form-field {
+	position: relative;
+	width: 100%;
+	border: none;	
+	height: 40px;
+	padding: 0;
+	color: #5e5e28;
+	font-weight: 100;
+	font-size: 14px;
+	font-style: italic;
+} 
+
+header .header-wraper .container-fluid > h1 {
+	position: relative;
+	top: 100px;
+	text-align: center;
+	font-size: 50pt;
+	color: #ffffff;
+	font-family: 'Molle', Arial, cursive;
+	 text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+header nav {
+	display: inline-block;
+	position: relative;
+	top: 170px;
+	width: 100%;
+}
+header nav > ul {
+	width: 720px;
+	margin: 0 auto;
+	padding:0;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+
+}
+header nav > ul > li {
+	display: inline-block;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	
+}
+header nav > ul > li > a {
+	position: absolute;
+	color: 	#ffffff;
+	font-size: 18pt;
+	font-weight: 600;
+	text-shadow: 0 0 10px black;
+	-webkit-transition-duration: 0.4s;
+	        transition-duration: 0.4s;
+}
+header nav > .nav > li > a:hover, .nav > li > a:focus {
+	color: #ffffff;
+	border-radius: 0;
+	background-image: none;
+	background-color: rgba(115, 115, 115, 0.4);
+	outline: none;
+	border: none;
+	margin: 0;
+}
+header nav > .nav > li > a:before, .nav > li> a:after {
+	display: block;
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 0;
+    background-color: #ff981a;
+    -webkit-transition: width .5s ease-in-out, left .5s ease-in-out;
+    transition: width .5s ease-in-out, left .5s ease-in-out;
+    left: 50%;
+    bottom: 0;
+}
+header nav > .nav > li > a:hover:before, .nav > li> a:hover:after {
+	width: 100%;
+    left: 0;
+}
+header nav > .nav > li > a:focus:before, .nav > li> a:focus:after{
+	width: 100%;
+    left: 0;
+}
+header nav > ul > li .glyphicon-chevron-down {
+	position: absolute;
+    top: 60px;
+    left: 128px;
+} 
+nav > .nav > li .drop-menu {
+	position: relative;
+	top: 100px;
+	left: 14px;
+	padding: 0;
+	width: 249px;
+	height: 275px;
+	background: rgba(51, 51, 51, 0.8);
+	opacity: 0;
+	z-index: 100;
+	display: none;
+}
+nav > .nav > li .drop-menu > li {
+	list-style-type: none;
+	width: 100%;
+	height: 55px;
+	border-bottom: 1px solid #595959;
+}
+nav > .nav > li .drop-menu > li:hover {
+	background: rgba(51, 51, 51, 0.9);
+}
+nav > .nav > li .drop-menu > li > a {
+	text-decoration: none;
+	display: block;
+	height: 100%;
+	font-size: 19px;
+	color: #ffffff;
+	padding-top: 12px;
+}
+nav > .nav > li .drop-menu > li > a:hover{
+	color: #ff981a;
+}
+.header-wraper .container-fluid .bottom-title {
+	position: absolute;
+	width: auto;
+    min-height: 150px;
+    max-height: 151px;
+    margin: 0 auto;
+    text-align: center;
+    color: #66d9ff;
+    font-weight: 600;
+    top: 410px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    font-size: 34px;
+    font-family: 'Indie Flower', Arial, cursive;
+}
+main > .container-fluid {
+/*//////////////////////////*/
+} 
+main .title-products {
+	position: relative;
+	height: 200px;
+	background: #e67300	;
+	font-size: 45px;
+	color: #ffffff;
+	margin: auto 0;
+	padding: 60px 20px 0;
+	vertical-align: middle;
+}
+main .glyphicon-menu-down {
+	position: relative;
+	top: 5px;
+}
+main .products {
+	background-color: #404040;
+	padding: 30px 80px;
+	overflow: hidden;
+	height: 475px;
+}
+main .products .row {
+	position: relative;
+	height: 100%;
+}
+main .products .row > .col-md-4 {
+	position: relative;
+	top: 50px;
+	height: 315px;
+	padding: 0;
+}
+main .products .thumbnail {
+	width: 350px;
+	border-radius: 0;
+	border: none;
+	height: 315px;
+	margin: 0 auto;
+	background-color: rgba(0,0,0,0.7);
+	text-align: center;
+	padding: 0;
+}
+main .products .thumbnail .image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	margin: 0;
+	padding: 0;
+	background-color: rgba(0, 204, 153, 0.4);
+	display: none;
+}
+main .products .thumbnail .glyphicon-link {
+	font-size: 55px;
+	padding-top: 124px;
+
+} 
+main .products .thumbnail:hover { 
+	-webkit-box-shadow: 0 0 5px 5px #ba7338; 
+	        box-shadow: 0 0 5px 5px #ba7338;
+	opacity: 0.5;
+}
+main .products .thumbnail:hover .image {
+	display: block;
+}
+main .products .thumbnail > span {
+	display: inline-block;
+	color: white;
+	font-size: 20px;
+	margin: 12px 0;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+main .products .t-left {
+	position: absolute;
+	left: -100%;
+	display: none;
+	opacity: 0;
+}
+main .products .t-middle {
+	position: absolute;
+	bottom: -100%;
+	right: 0;
+	left: 0;
+	display: none;
+	opacity: 0;		
+}
+main .products .t-right {
+	position: absolute;
+	right: -100%;
+	display: none;
+	opacity: 0;
+}
+.video-container {
+	position: relative;
+	width: 100%;
+}
+.video-container video {
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+	display: block;
+}
+.video-container .above-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	background: rgba(0,0,0,0.6);
+	text-align: center;
+}
+.video-container .above-video .some-text {
+	position: relative;
+	top: 45%;
+	font-size: 45pt;
+	color: #ffffff;
+	font-family: 'Oswald', Arial sans-serif;
+}
+.facts {
+	margin: 0;
+	padding: 25px;
+	background: #404040;
+}
+.facts .fact-pills {
+	border-bottom: 2px solid orange;
+}
+.facts .fact-pills > p {
+	color: #ffffff;
+	text-align: justify; 
+	font-size: 17px;
+	text-indent: 1em;
+	margin: 0;
+	padding: 8px;
+}
+.facts .fact-pills > p  > img {
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+	float: left;
+	margin: 8px;
+	border-radius: 50%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
